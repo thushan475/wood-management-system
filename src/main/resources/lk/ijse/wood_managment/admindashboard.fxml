@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="622.0" minWidth="1104.0" prefHeight="56.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.wood_managment.Controller.AdminDashboardController">
+    <children>
+        <ImageView fitHeight="741.0" fitWidth="1275.0" layoutX="-3.0" layoutY="-119.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/11.jpg" />
+            </image>
+        </ImageView>
+
+        <Label layoutX="378.0" layoutY="32.0" text="Admin Dashboard" textAlignment="CENTER" textFill="#f8eded" underline="true">
+            <font>
+                <Font name="DejaVu Serif Bold" size="36.0" />
+            </font>
+        </Label>
+
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/image.jpg" />
+            </image>
+        </ImageView>
+
+        <Button fx:id="btnCustomerDetails" layoutX="687.0" layoutY="160.0" mnemonicParsing="false" onAction="#openCustomerForm" prefHeight="45.0" prefWidth="264.0" text="Customer Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnEmployeeDetails" layoutX="285.0" layoutY="235.0" mnemonicParsing="false" onAction="#openEmployeeForm" prefHeight="45.0" prefWidth="264.0" text="Employee Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnOrderDetails" layoutX="687.0" layoutY="235.0" mnemonicParsing="false" onAction="#openOrderDetails" prefHeight="45.0" prefWidth="264.0" text="Order Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnTimberDetails" layoutX="285.0" layoutY="387.0" mnemonicParsing="false" onAction="#openTimberDetails" prefHeight="45.0" prefWidth="264.0" text="Timber Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnCuttingDetails" layoutX="285.0" layoutY="464.0" mnemonicParsing="false" onAction="#openCuttingDetails" prefHeight="45.0" prefWidth="264.0" text="Cutting Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnSupplierDetails" layoutX="285.0" layoutY="311.0" mnemonicParsing="false" onAction="#openSupplierDetails" prefHeight="45.0" prefWidth="264.0" text="Supplier Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnRegisterDetails" layoutX="285.0" layoutY="160.0" mnemonicParsing="false" onAction="#openRegisterDetails" prefHeight="45.0" prefWidth="264.0" text="Register Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnWoodDetails" layoutX="687.0" layoutY="311.0" mnemonicParsing="false" onAction="#openWoodDetails" prefHeight="45.0" prefWidth="264.0" text="Wood Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnBillDetails" layoutX="687.0" layoutY="387.0" mnemonicParsing="false" onAction="#openBillDetails" prefHeight="45.0" prefWidth="264.0" text="Bill Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnExpenseDetails" layoutX="687.0" layoutY="464.0" mnemonicParsing="false" onAction="#openExpenseDetails" prefHeight="45.0" prefWidth="264.0" text="Expense Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+            <Button fx:id="btnBackLogin" layoutX="50.0" layoutY="550.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="45.0" prefWidth="150.0" text="Logout">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      <Button fx:id="Calculator" layoutX="687.0" layoutY="537.0" mnemonicParsing="false" onAction="#openCalculator" prefHeight="45.0" prefWidth="264.0" text="Calculator">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
