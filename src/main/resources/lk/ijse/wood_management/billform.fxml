@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="622.0" minWidth="1104.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.wood_management.controller.BillFormController">
+   <children>
+      <ImageView fitHeight="747.0" fitWidth="1278.0" layoutX="-16.0" layoutY="-125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/11.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="466.0" layoutY="20.0" text="Bill Details" textFill="#f5eded" underline="true">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="148.0" text="Order Id" textFill="#f5f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="195.0" text="Amount" textFill="#f5f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmount" layoutX="179.0" layoutY="193.0" />
+      <TextField fx:id="txtDescription" layoutX="179.0" layoutY="247.0" />
+      <Label layoutX="30.0" layoutY="302.0" text="Bill Date" textFill="#f5f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpBillDate" layoutX="176.0" layoutY="299.0" prefHeight="26.0" prefWidth="168.0" />
+      <Label layoutX="30.0" layoutY="250.0" text="Description" textFill="#f5f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBill" layoutX="2.0" layoutY="376.0" prefHeight="246.0" prefWidth="1104.0">
+         <columns>
+            <TableColumn fx:id="colBillId" prefWidth="150.0" text="Bill Id" />
+            <TableColumn fx:id="colOrderId" minWidth="0.0" prefWidth="75.0" text="Order Id" />
+            <TableColumn fx:id="colAmount" minWidth="0.0" prefWidth="242.0" text="Amount" />
+            <TableColumn fx:id="colBillDate" prefWidth="362.0" text="Bill Date" />
+            <TableColumn fx:id="colDescription" prefWidth="274.0" text="Description" />
+         </columns>
+      </TableView>
+      <Button layoutX="789.0" layoutY="75.0" mnemonicParsing="false" onAction="#addBill" prefHeight="46.0" prefWidth="129.0" style="-fx-background-color: yellow;" text="Add">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="789.0" layoutY="192.0" mnemonicParsing="false" onAction="#deleteBill" prefHeight="46.0" prefWidth="129.0" style="-fx-background-color: red;" text="Delete">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="789.0" layoutY="131.0" mnemonicParsing="false" onAction="#updateBill" style="-fx-background-color: green;" text="Update">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="789.0" layoutY="249.0" mnemonicParsing="false" onAction="#searchBill" prefHeight="46.0" prefWidth="129.0" style="-fx-background-color: Blue;" text="Search" textFill="#f8f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="789.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="46.0" prefWidth="129.0" text="Back" textFill="#141313">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="789.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="46.0" prefWidth="129.0" text="Back" textFill="#141313">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+
+      <Label layoutX="35.0" layoutY="99.0" text="Bill Id" textFill="#f5f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBillId" layoutX="179.0" layoutY="96.0" />
+      <ComboBox fx:id="cmbOrderId" layoutX="176.0" layoutY="146.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button fx:id="Invoice" layoutX="426.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnInvoice" prefHeight="46.0" prefWidth="144.0" style="-fx-background-color: #2ca85b;" text="Invoice">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

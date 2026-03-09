@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="622.0" minWidth="1104.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.wood_management.controller.CuttingFormController">
+   <children>
+      <ImageView fitHeight="746.0" fitWidth="1456.0" layoutX="-15.0" layoutY="-130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/11.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="24.0" text="Cutting Details" textFill="#f8f1f1" underline="true" wrapText="true">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtWoodId" layoutX="207.0" layoutY="91.0" />
+      <Label layoutX="48.0" layoutY="95.0" text="Wood Id" textFill="#f8f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="144.0" text=" qty produced" textFill="#f8f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="207.0" layoutY="141.0" />
+      <TextField fx:id="txtDescription" layoutX="207.0" layoutY="196.0" />
+      <Label layoutX="41.0" layoutY="261.0" text="Cutting_date" textFill="#f8f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCutting" layoutY="374.0" prefHeight="248.0" prefWidth="1104.0">
+         <columns>
+            <TableColumn fx:id="colCuttingId" prefWidth="176.0" text="Cutting Id" />
+            <TableColumn fx:id="colWoodId" prefWidth="233.0" text="Wood Id" />
+            <TableColumn fx:id="colQty" prefWidth="213.0" text="Qty" />
+            <TableColumn fx:id="colDescription" prefWidth="246.0" text="Description" />
+            <TableColumn fx:id="colDate" prefWidth="235.0" text="Cutting Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="841.0" layoutY="82.0" mnemonicParsing="false" onAction="#btnAddS" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: yellow;" text="Add">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="841.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnUpdate" style="-fx-background-color: green;" text="Update">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="843.0" layoutY="197.0" mnemonicParsing="false" onAction="#dtnDelete" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: red;" text="Delete">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="843.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Search" textFill="#ebe3e3">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dpDate" layoutX="207.0" layoutY="259.0" prefHeight="26.0" prefWidth="162.0" />
+      <Label layoutX="41.0" layoutY="199.0" text="Description" textFill="#f8f4f4">
+         <font>
+            <Font name="DejaVu Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="843.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="46.0" prefWidth="125.0" text="Back" textFill="#141313">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

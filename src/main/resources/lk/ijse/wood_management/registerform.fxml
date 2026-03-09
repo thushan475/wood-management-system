@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="622.0" minWidth="1104.0" prefHeight="622.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.wood_management.controller.RegisterController">
+    <children>
+        <ImageView fitHeight="741.0" fitWidth="1173.0" layoutX="-3.0" layoutY="-119.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/11.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtUserName" layoutX="56.0" layoutY="118.0" prefHeight="26.0" prefWidth="244.0" />
+
+        <Label layoutX="50.0" layoutY="90.0" text="User Name" textFill="#fffffffe">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="58.0" layoutY="177.0" text="Password" textFill="#f2eded">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="676.0" layoutY="90.0" text="Email" textFill="#e8dfdf">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtEmail" layoutX="676.0" layoutY="131.0" prefHeight="21.0" prefWidth="244.0" />
+
+        <Label layoutX="676.0" layoutY="177.0" text="Contact" textFill="#f2eeee">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtContact" layoutX="676.0" layoutY="211.0" prefHeight="21.0" prefWidth="244.0" />
+
+        <Label layoutX="60.0" layoutY="268.0" text="Role" textFill="#f5efef">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbRole" layoutX="56.0" layoutY="298.0" prefHeight="26.0" prefWidth="244.0" />
+
+        <Label layoutX="675.0" layoutY="268.0" text="Create Date" textFill="#f5f5f5">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="dpCreateDate" layoutX="675.0" layoutY="298.0" />
+
+        <Label alignment="CENTER" layoutX="402.0" layoutY="14.0" text="Register" textAlignment="CENTER" textFill="#f8efef" underline="true">
+            <font>
+                <Font name="DejaVu Serif Bold" size="37.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="btnSubmit" layoutX="676.0" layoutY="383.0" mnemonicParsing="false" onAction="#SubmitOnAction" style="-fx-background-color: yellow;" text="Submit" textFill="#252424">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnBack" layoutX="65.0" layoutY="389.0" mnemonicParsing="false" onAction="#BackToLoginOnAction" text="Back" textFill="#2c2a2a">
+            <font>
+                <Font name="DejaVu Serif Bold" size="20.0" />
+            </font>
+        </Button>
+
+        <PasswordField fx:id="txtPassword" layoutX="50.0" layoutY="224.0" prefHeight="26.0" prefWidth="244.0" />
+
+        <Button fx:id="btnDelete" layoutX="894.0" layoutY="381.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: red;" text="Delete" textFill="#f8f5f5" onAction="#btnDelete">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
